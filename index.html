@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo de Eletroímãs - Apresentação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .magnetic-card {
+            transition: transform 0.3s ease;
+        }
+        .magnetic-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="font-['Poppins'] bg-gradient-to-b from-blue-50 to-indigo-100 min-h-screen">
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-800 text-white py-8 px-4 shadow-xl">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <h1 class="text-4xl font-bold pulse"><i class="fas fa-magnet mr-3"></i>ELETROÍMÃ</h1>
+                    <p class="mt-2 text-lg">Explorando os princípios do eletromagnetismo</p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+                        <i class="fas fa-bolt text-blue-800"></i>
+                    </span>
+                    <span class="text-sm md:text-base">PROJETO A3</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+    <section class="mb-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-indigo-800 mb-4">Nosso Time</h2>
+            <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+            <p class="mt-6 max-w-2xl mx-auto text-gray-700">
+                Um grupo dedicado ao estudo dos eletroímãs, explorando suas aplicações, princípios físicos e potencial inovador.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Isabella (I) -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg magnetic-card">
+                <div class="bg-gradient-to-r from-purple-500 to-pink-600 h-3"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 text-2xl font-bold">
+                            IP
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg">Isabella Pocceschi Silva Lopes</h3>
+                            <p class="text-pink-600 text-sm">4251924863</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        Engenharia de Computação - UNA
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-gray-200 flex space-x-4">
+                        <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">Materiais</span>
+                        <span class="px-2 py-1 bg-pink-100 text-pink-800 rounded-full text-xs">Pesquisa</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jean (J) -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg magnetic-card">
+                <div class="bg-gradient-to-r from-blue-500 to-indigo-600 h-3"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 text-2xl font-bold">
+                            JH
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg">Jean Henrique Resende Paiva</h3>
+                            <p class="text-blue-600 text-sm">4251925073</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        Engenharia de Software - UNA
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-gray-200 flex space-x-4">
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Automação</span>
+                        <span class="px-2 py-1 bg-indigo-100 text-indigo-800 rounded-full text-xs">Eletrônica</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leiriany (L) -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg magnetic-card">
+                <div class="bg-gradient-to-r from-cyan-500 to-teal-600 h-3"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center text-teal-600 text-2xl font-bold">
+                            LS
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg">Leiriany Suzana Rodrigues Soares</h3>
+                            <p class="text-teal-600 text-sm">4251923058</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        Engenharia Mecânica - UNA
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-gray-200 flex space-x-4">
+                        <span class="px-2 py-1 bg-cyan-100 text-cyan-800 rounded-full text-xs">Simulação</span>
+                        <span class="px-2 py-1 bg-teal-100 text-teal-800 rounded-full text-xs">Modelagem</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maria Eduarda (M) -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg magnetic-card">
+                <div class="bg-gradient-to-r from-amber-500 to-orange-600 h-3"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 text-2xl font-bold">
+                            ME
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg">Maria Eduarda Kelmer Ferreira Silva</h3>
+                            <p class="text-orange-600 text-sm">4251924223</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        Engenharia de Produção - UNA
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-gray-200 flex space-x-4">
+                        <span class="px-2 py-1 bg-amber-100 text-amber-800 rounded-full text-xs">Simulação</span>
+                        <span class="px-2 py-1 bg-orange-100 text-orange-800 rounded-full text-xs">Modelagem</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mateus (M) -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg magnetic-card">
+                <div class="bg-gradient-to-r from-emerald-500 to-green-600 h-3"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-2xl font-bold">
+                            MS
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg">Mateus Silva de Moraes</h3>
+                            <p class="text-green-600 text-sm">4251925077</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        Engenharia Produção - UNA
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-gray-200 flex space-x-4">
+                        <span class="px-2 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs">Sustentabilidade</span>
+                        <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">Pesquisa</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oton (O) -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg magnetic-card">
+                <div class="bg-gradient-to-r from-lime-500 to-green-600 h-3"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-lime-100 flex items-center justify-center text-lime-600 text-2xl font-bold">
+                            OA
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg">Oton Augusto P da Silva</h3>
+                            <p class="text-green-600 text-sm">4251924999</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        Engenharia de Mecânica - UNA
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-gray-200 flex space-x-4">
+                        <span class="px-2 py-1 bg-lime-100 text-lime-800 rounded-full text-xs">Liderança</span>
+                        <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">Fabricação</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rafael (R) -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg magnetic-card">
+                <div class="bg-gradient-to-r from-red-500 to-rose-600 h-3"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 text-2xl font-bold">
+                            RG
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg">Rafael Geoffroy Robini</h3>
+                            <p class="text-rose-600 text-sm">4251921997</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        Engenharia de Software - UNA
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-gray-200 flex space-x-4">
+                        <span class="px-2 py-1 bg-red-100 text-red-800 rounded-full text-xs">Fabricação</span>
+                        <span class="px-2 py-1 bg-rose-100 text-rose-800 rounded-full text-xs">Automação</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Samuel (S) -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg magnetic-card">
+                <div class="bg-gradient-to-r from-violet-500 to-fuchsia-600 h-3"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-fuchsia-100 flex items-center justify-center text-fuchsia-600 text-2xl font-bold">
+                            SC
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg">Samuel Carlos Pereira Barbosa</h3>
+                            <p class="text-fuchsia-600 text-sm">4251921027</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        Engenharia de Mecânica - UNA
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-gray-200 flex space-x-4">
+                        <span class="px-2 py-1 bg-violet-100 text-violet-800 rounded-full text-xs">Inovação</span>
+                        <span class="px-2 py-1 bg-fuchsia-100 text-fuchsia-800 rounded-full text-xs">Fabricação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-2xl font-bold text-center mb-6 text-indigo-800">Pesquisa UNA</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-6 md:mb-0">
+                    <div class="bg-gradient-to-r from-blue-400 to-indigo-500 rounded-lg p-1 inline-block">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                             alt="Eletroímã em funcionamento" 
+                             class="rounded-lg w-full h-auto">
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-600">Explorando o Potencial dos Eletroímãs</h3>
+                    <p class="text-gray-700 mb-4">
+                        Grupo da UNA composto por estudantes de diversas engenharias (Produção, Computação, Software e Mecânica) pesquisando aplicações de eletroímãs em diferentes contextos tecnológicos e industriais.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Motor a solenoide</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Eletromagnetismo</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Guindaste</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Porta Automatica</span>
+                        </li>
+                    </ul>
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300 flex items-center">
+                        <i class="fas fa-book mr-2"></i> Saiba mais sobre nossa pesquisa
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center">
+    <h2 class="text-3xl font-bold mb-6 text-indigo-800">Agradecimentos</h2>
+    <p class="text-gray-700 mb-8 max-w-2xl mx-auto">
+        Gostaríamos de expressar nossa sincera gratidão aos professores que, com sua dedicação e conhecimento, tornaram este trabalho possível. Seu apoio, orientação e inspiração foram fundamentais para o nosso aprendizado e sucesso neste projeto de eletromagnetismo.
+    </p>
+    <p class="text-gray-700 mb-8 max-w-2xl mx-auto">
+        Agradecemos especialmente por compartilharem sua expertise, paciência e entusiasmo, que nos motivaram a superar desafios e aprofundar nossos conhecimentos na área.
+    </p>
+</section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-8 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold text-white mb-2"><i class="fas fa-magnet mr-2"></i>Eletroímãs</h3>
+                    <p class="text-sm">Pesquisa e inovação em eletromagnetismo</p>
+                </div>
+                <div class="text-sm">
+                    <p>&copy; 2025 Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Efeito de animação interativa
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.magnetic-card');
+            
+            cards.forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const x = e.pageX - card.offsetLeft;
+                    const y = e.pageY - card.offsetTop;
+                    
+                    const centerX = card.offsetWidth / 2;
+                    const centerY = card.offsetHeight / 2;
+                    
+                    const angleX = (y - centerY) / 10;
+                    const angleY = (centerX - x) / 10;
+                    
+                    card.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.03)`;
+                });
+                
+                card.addEventListener('mouseout', () => {
+                    card.style.transform = 'translateY(-10px) scale(1.03)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
